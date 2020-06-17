@@ -1,0 +1,21 @@
+@import 'normalize.scss';
+@import 'colors.scss';
+@import 'fonts.scss';
+@import 'header.scss';
+@import 'slider.scss';
+@import 'footer.scss';
+
+body {
+    font-family: 'GillSansStd', Arial, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}

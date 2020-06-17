@@ -1,0 +1,69 @@
+@import 'colors.scss';
+@import 'breakpoints.scss';
+
+.slide-container-arrow {
+    display: flex;
+    justify-content: center;
+}
+
+.sider-container {
+    background-color: $gray;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: $tablet) {
+        padding: 30px 0;
+    }
+
+    .swiper-container {
+        cursor: grab;
+
+        img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .sale-sticker {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .swiper-button-next-unique,
+    .swiper-button-prev-unique {
+        position: absolute;
+        height: 30px;
+        width: 24px;
+        background-size: 30px;
+        cursor: pointer;
+
+        top: 40%;
+        z-index: 99;
+
+        &.disabled {
+            opacity: 0.3;
+            cursor: auto;
+        }
+    }
+    .swiper-button-next-unique {
+        background-image: url(https://www.lyleandscott.com/on/demandware.static/-/Sites/default/dw293d58ab/images/slot/homepage-v3/27032020/right-arrow-chevron.svg);
+        right: 0;
+
+        @media screen and (max-width: $tablet) {
+            margin-right: 10px;
+        }
+    }
+
+    .swiper-button-prev-unique {
+        background-image: url(https://www.lyleandscott.com/on/demandware.static/-/Sites/default/dw151710fa/images/slot/homepage-v3/27032020/left-arrow-chevron.svg);
+        left: 0;
+
+        @media screen and (max-width: $tablet) {
+            margin-left: 10px;
+        }
+    }
+}
